@@ -17,15 +17,15 @@ jobs:
 
       # build and push ------------------>
 
-      - run: docker build -t matanmagen/multi-client-10-14 ./client
-      - run: docker build -t matanmagen/multi-nginx-10-14 ./nginx
-      - run: docker build -t matanmagen/multi-server-10-14 ./server
-      - run: docker build -t matanmagen/multi-worker-10-14 ./worker
+      - run: docker build -t matanmagen/multi-client ./client/ngnix
+      - run: docker build -t matanmagen/multi-nginx ./nginx
+      - run: docker build -t matanmagen/multi-server ./server
+      - run: docker build -t matanmagen/multi-worker ./worker
  
-      - run: docker push matanmagen/multi-client-10-14
-      - run: docker push matanmagen/multi-nginx-10-14
-      - run: docker push matanmagen/multi-server-10-14
-      - run: docker push matanmagen/multi-worker-10-14
+      - run: docker push matanmagen/multi-client
+      - run: docker push matanmagen/multi-nginx
+      - run: docker push matanmagen/multi-server
+      - run: docker push matanmagen/multi-worker
  
       # create zip and deploy to EB
       - name: Generate deployment package
