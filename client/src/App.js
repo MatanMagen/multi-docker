@@ -18,7 +18,7 @@ function App() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            first project AWS
+            first project AWS - SGL 
           </a>
           <Link to="/">Home</Link>
           <Link to="/otherpage">Other Page</Link>
