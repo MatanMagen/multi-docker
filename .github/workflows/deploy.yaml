@@ -17,7 +17,7 @@ jobs:
 
       # build and push ------------------>
 
-      - run: docker build -t matanmagen/multi-client ./client/ngnix
+      - run: docker build -t matanmagen/multi-client ./client
       - run: docker build -t matanmagen/multi-nginx ./nginx
       - run: docker build -t matanmagen/multi-server ./server
       - run: docker build -t matanmagen/multi-worker ./worker
